@@ -162,3 +162,27 @@ body {
   background-color: rgba(245, 245, 245, 0.2);
   color: #f5f5f5;
 }
+/* ================= TECH STACK MARQUEE ================= */
+
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee__content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding-right: 3rem;
+}
+
+/* Smooth infinite scroll */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
