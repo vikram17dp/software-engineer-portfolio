@@ -9,7 +9,7 @@ import Projects from "@/components/sections/projects"
 import Contact from "@/components/sections/contact"
 import Footer from "@/components/sections/footer"
 import Hero from "@/components/sections/Hero"
-
+import Education from "@/components/sections/Education"
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
 
@@ -36,6 +36,7 @@ export default function Home() {
           <Navigation />
           <Hero />
           <TechStack />
+          <Education />
           <Projects />
           <Contact />
           <Footer />
