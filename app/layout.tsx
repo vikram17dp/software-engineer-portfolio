@@ -39,6 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans antialiased bg-[#0B0B0B] text-[#F5F5F5]`}>
+        {/* <Navigation /> */}
         {children}
         {/* <SmoothScroll /> */}
         <Analytics />
