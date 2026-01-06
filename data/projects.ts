@@ -12,16 +12,23 @@ export const projects = [
     purpose:
       "To build a secure and scalable digital memory banking platform that allows users to store, organize, and retrieve personal memories using AI-powered intelligence.",
 
+    description: [
+      "Major academic project designed with real-world use cases in mind.",
+      "Focused on scalability, clean architecture, performance optimization, and secure data handling.",
+    ],
+
+    fullDescription: [
+      "Vision → Create a digital memory bank where users can store, search, and relive personal moments using AI-powered intelligence rather than manual organization.",
+      "AI Capabilities → Semantic search enables memory retrieval by meaning instead of keywords. AI-driven categorization groups memories automatically for faster access.",
+      "Architecture → Built with a scalable backend architecture ensuring secure authentication, efficient indexing, and low-latency access even as user data grows.",
+      "Outcome → Users can securely manage their memories, retrieve them instantly, and rely on a system designed for long-term scalability and privacy."
+    ],
+
     modules: [
       "Secure user authentication and authorization",
       "AI-powered memory categorization and semantic search",
       "Scalable backend architecture for large-scale memory storage",
       "Optimized performance for fast access and retrieval",
-    ],
-
-    description: [
-      "Major academic project designed with real-world use cases in mind.",
-      "Focused on scalability, clean architecture, performance optimization, and secure data handling.",
     ],
 
     informationParagraphs: [
@@ -40,9 +47,15 @@ export const projects = [
     ],
 
     tech: ["Next.js", "React", "Node.js", "MongoDB"],
+
+    contribution: "Vikram D P",
+    credits: [
+      { role: "Product & Engineering", name: "Vikram D P" }
+    ],
+
     related: [1, 2],
-     github: "https://github.com/yourusername/digital-memory-bank",
-    live: "https://memory-bank.vercel.app"
+    github: "https://github.com/yourusername/digital-memory-bank",
+    live: "https://memory-bank.vercel.app",
   },
 
   {
@@ -56,16 +69,23 @@ export const projects = [
     purpose:
       "To automate restaurant operations such as order management, billing, and inventory using a full-stack web solution.",
 
+    description: [
+      "Industry-level internship project built during a software engineering internship.",
+      "Worked on real production features including backend APIs and database integration.",
+    ],
+
+    fullDescription: [
+      "Problem → Manual restaurant operations lead to inefficiencies in order tracking, billing, and inventory management.",
+      "Solution → Developed a centralized system to manage orders, staff, and inventory through a unified dashboard.",
+      "Backend Design → REST APIs were built to handle real-time order updates with reliable data consistency.",
+      "Impact → Improved operational efficiency and provided real-world exposure to production-grade software systems."
+    ],
+
     modules: [
       "Admin dashboard for restaurant and staff management",
       "Order processing and billing system",
       "REST APIs for real-time order updates",
       "Database schema design for menu and order data",
-    ],
-
-    description: [
-      "Industry-level internship project built during a software engineering internship.",
-      "Worked on real production features including backend APIs and database integration.",
     ],
 
     informationParagraphs: [
@@ -84,9 +104,15 @@ export const projects = [
     ],
 
     tech: ["React", "Node.js", "MongoDB"],
+
+    contribution: "Vikram D P",
+    credits: [
+      { role: "Backend & API Development", name: "Vikram D P" }
+    ],
+
     related: [0, 2],
-     github: "https://github.com/yourusername/digital-memory-bank",
-    live: "https://memory-bank.vercel.app"
+    github: "https://github.com/yourusername/restaurant-management",
+    live: "https://restaurant-system.vercel.app",
   },
 
   {
@@ -100,23 +126,36 @@ export const projects = [
     purpose:
       "To design a responsive and user-friendly frontend interface for managing hospital workflows.",
 
+    description: [
+      "Frontend-focused project emphasizing responsive design and clean UI.",
+      "Built reusable components to improve maintainability and consistency.",
+    ],
+
+    fullDescription: [
+      "Objective → Create a clean and intuitive UI for hospital staff to manage daily workflows.",
+      "Design Approach → Focused on responsive layouts and reusable components for scalability.",
+      "Implementation → Built modular React components styled with Tailwind CSS.",
+      "Result → Delivered a maintainable and user-friendly frontend interface."
+    ],
+
     modules: [
       "Responsive UI for hospital dashboards",
       "Reusable component-based architecture",
       "Optimized layouts for desktop and mobile",
     ],
 
-    description: [
-      "Frontend-focused project emphasizing responsive design and clean UI.",
-      "Built reusable components to improve maintainability and consistency.",
-    ],
-
     images: ["/projects/projectone.png"],
 
     tech: ["React", "Tailwind CSS"],
+
+    contribution: "Vikram D P",
+    credits: [
+      { role: "Frontend Development", name: "Vikram D P" }
+    ],
+
     related: [0],
-     github: "https://github.com/yourusername/digital-memory-bank",
-    live: "https://memory-bank.vercel.app"
+    github: "https://github.com/yourusername/hospital-frontend",
+    live: "https://hospital-ui.vercel.app",
   },
 
   {
@@ -130,16 +169,23 @@ export const projects = [
     purpose:
       "To build scalable backend services for managing vehicle listings and dealership operations.",
 
+    description: [
+      "Backend-centric project focused on API development and database design.",
+      "Implemented secure authentication and scalable data handling mechanisms.",
+    ],
+
+    fullDescription: [
+      "Goal → Build backend services capable of supporting multiple car dealerships securely.",
+      "System Design → APIs manage vehicle listings, dealer profiles, and administrative workflows.",
+      "Security → Implemented authentication, authorization, and role-based access control.",
+      "Scalability → Designed schemas and APIs to handle growing datasets efficiently."
+    ],
+
     modules: [
       "Authentication and authorization system",
       "Vehicle and dealership data management APIs",
       "Database schema design and optimization",
       "Role-based access control for dealers and admins",
-    ],
-
-    description: [
-      "Backend-centric project focused on API development and database design.",
-      "Implemented secure authentication and scalable data handling mechanisms.",
     ],
 
     informationParagraphs: [
@@ -156,10 +202,14 @@ export const projects = [
     ],
 
     tech: ["Node.js", "Express", "MongoDB"],
-    related: [1],
-     github: "https://github.com/yourusername/digital-memory-bank",
-    live: "https://memory-bank.vercel.app"
-  },
 
-  
+    contribution: "Vikram D P",
+    credits: [
+      { role: "Backend Engineering", name: "Vikram D P" }
+    ],
+
+    related: [1],
+    github: "https://github.com/yourusername/vehicle-portal",
+    live: "https://vehicle-portal.vercel.app",
+  },
 ]

@@ -10,6 +10,7 @@ import Footer from "@/components/sections/footer"
 import Hero from "@/components/sections/Hero"
 import Education from "@/components/sections/Education"
 import Projects from "@/components/Projects"
+import ExperienceSection from "@/components/ExperienceSection"
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
 
@@ -38,6 +39,7 @@ export default function Home() {
           <TechStack />
           <Education />
           <Projects />
+          <ExperienceSection/>
           <Contact />
           <Footer />
         </motion.main>
