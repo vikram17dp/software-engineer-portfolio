@@ -3,16 +3,18 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
-import LoadingScreen from "@/components/loading-screen"
-import Navigation from "@/components/navigation"
-import ExperienceSection from "@/components/ExperienceSection"
-import Projects from "@/components/Projects"
-import TechStack from "@/components/sections/tech-stack"
-import Education from "@/components/sections/Education"
-import About from "@/components/About"
-import Contact from "@/components/sections/contact"
-import Footer from "@/components/sections/footer"
-import Hero from "@/components/sections/Hero"
+import Hero from "../components/sections/Hero"
+import TechStack from "../components/sections/tech-stack"
+import Education from "../components/sections/Education"
+import Contact from "../components/sections/contact"
+import Footer from "../components/sections/footer"
+
+import ExperienceSection from "../components/ExperienceSection"
+import Projects from "../components/Projects"
+import About from "../components/About"
+import Navigation from "../components/navigation"
+import LoadingScreen from "../components/loading-screen"
+
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)

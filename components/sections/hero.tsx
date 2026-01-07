@@ -17,7 +17,7 @@ export default function Hero() {
  
    useEffect(() => {
      if (videoRef.current) {
-       videoRef.current.playbackRate = 0.8
+       videoRef.current.playbackRate = 0.2; // Set to 0.75x speed
      }
    }, [])
   return (
@@ -29,6 +29,7 @@ export default function Hero() {
   loop
   muted
   playsInline
+
   className="absolute top-0 left-0 w-full h-full object-cover"
 >
   <source src="/fourthone.mp4" type="video/mp4" />
@@ -97,7 +98,7 @@ export default function Hero() {
       hover: { opacity: 0 },
     }}
     transition={{
-      duration: 0.35,
+      duration: 0.30,
       ease: "easeOut",
     }}
     className="absolute inset-0 z-10 whitespace-nowrap "
