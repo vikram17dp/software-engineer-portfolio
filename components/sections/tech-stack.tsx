@@ -1,18 +1,20 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion, type Variants } from "framer-motion"
+
 
 /* ================= ANIMATIONS ================= */
 
-const container = {
+const container: Variants = {
+
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: { staggerChildren: 0.12 },
   },
 }
+const item: Variants = {
 
-const item = {
   hidden: { opacity: 0, y: 24 },
   visible: {
     opacity: 1,
