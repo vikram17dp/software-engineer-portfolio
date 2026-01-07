@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
-import Hero from "../components/sections/Hero"
+import Hero from "../components/sections/hero"
 import TechStack from "../components/sections/tech-stack"
 import Education from "../components/sections/Education"
 import Contact from "../components/sections/contact"
