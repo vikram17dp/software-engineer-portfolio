@@ -8,7 +8,7 @@ import { useScrollToSection } from "@/hooks/useScrollToSection"
 import LoadingScreen from "@/components/loading-screen"
 import Navigation from "@/components/navigation"
 
-import Hero from "@/components/sections/Hero"
+
 import ExperienceSection from "@/components/ExperienceSection"
 import Projects from "@/components/Projects"
 import TechStack from "@/components/sections/tech-stack"
@@ -16,6 +16,7 @@ import Education from "@/components/sections/Education"
 import About from "@/components/About"
 import Contact from "@/components/sections/contact"
 import Footer from "@/components/sections/footer"
+import Hero from "@/components/sections/Hero"
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
