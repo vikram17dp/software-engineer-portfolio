@@ -115,6 +115,8 @@ export default function Projects() {
       duration-300
       hover:bg-white
       hover:text-black
+      white-space-nowrap
+      cursor-pointer
     "
   >
     {/* Hover shine */}
@@ -128,7 +130,7 @@ export default function Projects() {
     />
 
     {/* Text */}
-    <span className="relative z-10 flex items-center gap-2">
+    <span className="relative z-10 flex items-center gap-2 whitespace-nowrap cursor-pointer">
       Explore More Projects
       <span className="opacity-70">↘</span>
     </span>

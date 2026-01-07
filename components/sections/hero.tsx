@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import TechStack from '../TechStack';
 import { motion } from "framer-motion";
+import { useEffect, useRef } from "react"
 
 import {
   Github as GithubIcon,
@@ -11,22 +12,29 @@ import {
   Code as LeetCodeIcon,
 } from 'lucide-react';
 
-
 export default function Hero() {
+  const videoRef = useRef<HTMLVideoElement | null>(null)
+ 
+   useEffect(() => {
+     if (videoRef.current) {
+       videoRef.current.playbackRate = 0.8
+     }
+   }, [])
   return (
     <section id="home" className="relative h-screen w-full overflow-hidden bg-black">
       {/* Video Background */}
-      <video 
-        autoPlay 
-        loop 
-        muted 
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover"
-      >
-        <source src="/fourthone.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      
+      <video
+  ref={videoRef}
+  autoPlay
+  loop
+  muted
+  playsInline
+  className="absolute top-0 left-0 w-full h-full object-cover"
+>
+  <source src="/fourthone.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
       {/* Dark Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/20"></div>
 
@@ -49,7 +57,7 @@ export default function Hero() {
               </div>
               
               {/* Name – SINGLE LINE */}
-              <div>
+               <div>
            <motion.h1
   initial="rest"
   whileHover="hover"
@@ -73,12 +81,13 @@ export default function Hero() {
   className="
     relative
     inline-block
-    cursor-default
+    
     text-[2.75rem]
     sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl
     font-accent font-black
     leading-[0.85] sm:leading-[0.9]
     tracking-[-0.02em]
+    cursor-pointer
   "
 >
   {/* NORMAL TEXT */}
@@ -91,7 +100,7 @@ export default function Hero() {
       duration: 0.35,
       ease: "easeOut",
     }}
-    className="absolute inset-0 z-10 whitespace-nowrap"
+    className="absolute inset-0 z-10 whitespace-nowrap "
   >
     <span className="text-white">VIKRAM</span>{" "}
     <span className="text-white/40">D P</span>

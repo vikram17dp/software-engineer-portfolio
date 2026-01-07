@@ -14,7 +14,7 @@ function ImageSlider({ images }: { images: string[] }) {
   const [index, setIndex] = useState(0)
 
   return (
-    <div className="relative w-full h-[260px] sm:h-[300px] md:h-[340px] rounded-2xl overflow-hidden border border-white/10 bg-black">
+    <div className="relative aspect-[22/12] overflow-hidden cursor-pointer group ">
       <img
         src={images[index]}
         alt="education"
@@ -32,7 +32,7 @@ function ImageSlider({ images }: { images: string[] }) {
 
           <button
             onClick={() => setIndex((index + 1) % images.length)}
-            className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/60 text-white border border-white/20 hover:bg-black"
+            className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/60 text-white border border-white/20 hover:bg-black cursor-pointer"
           >
             ›
           </button>
@@ -88,11 +88,7 @@ export default function EducationPage() {
       <div className="max-w-7xl mx-auto space-y-28">
 
         {/* HEADER */}
-        <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          animate="visible"
-        >
+        <motion.div variants={fadeUp} initial="hidden" animate="visible">
           <p className="text-xs tracking-widest uppercase text-white/40 mb-4">
             Education
           </p>
@@ -106,7 +102,7 @@ export default function EducationPage() {
         </motion.div>
 
         {/* EDUCATION ITEMS */}
-        {education.map((item, i) => (
+        {education.map((item) => (
           <motion.div
             key={item.title}
             variants={fadeUp}
@@ -115,56 +111,34 @@ export default function EducationPage() {
             viewport={{ once: true }}
             className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center"
           >
-            {/* IMAGE (LEFT on desktop, TOP on mobile) */}
             <ImageSlider images={item.images} />
 
             {/* CONTENT */}
-            <div
-  className="
-    relative
-    p-8 md:p-10
-    bg-black
-    border border-white/20
-    clip-path-tech
-    overflow-hidden
-    group
-  "
->
-  {/* Glitch gradient */}
-  <div
-    className="
-      absolute inset-0
-      opacity-0 group-hover:opacity-100
-      transition-opacity duration-500
-      bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.12),transparent)]
-    "
-  />
+            <div className="relative p-8 md:p-10 bg-black border border-white/20 clip-path-tech overflow-hidden group">
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.12),transparent)]" />
 
-  {/* Corner accents */}
-  <span className="absolute top-0 left-0 w-4 h-4 border-t border-l border-white/40" />
-  <span className="absolute top-0 right-0 w-4 h-4 border-t border-r border-white/40" />
-  <span className="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-white/40" />
-  <span className="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-white/40" />
+              <span className="absolute top-0 left-0 w-4 h-4 border-t border-l border-white/40" />
+              <span className="absolute top-0 right-0 w-4 h-4 border-t border-r border-white/40" />
+              <span className="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-white/40" />
+              <span className="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-white/40" />
 
-  <h2 className="text-2xl md:text-3xl font-semibold text-white mb-3 tracking-wide">
-    {item.title}
-  </h2>
+              <h2 className="text-2xl md:text-3xl font-semibold text-white mb-3 tracking-wide">
+                {item.title}
+              </h2>
 
-  <p className="text-white/80 mb-2 font-medium">
-    {item.subtitle}
-  </p>
+              <p className="text-white/80 mb-2 font-medium">
+                {item.subtitle}
+              </p>
 
-  <p className="text-white/50 text-sm mb-6 tracking-wide">
-    {item.duration} · {item.location}
-  </p>
+              <p className="text-white/50 text-sm mb-6 tracking-wide">
+                {item.duration} · {item.location}
+              </p>
 
-  {/* Highlight chip */}
-  <div className="inline-flex items-center gap-2 px-5 py-2 border border-white/30 text-white text-sm tracking-wide bg-black">
-    <span className="w-2 h-2 bg-white animate-pulse" />
-    {item.highlight}
-  </div>
-</div>
-
+              <div className="inline-flex items-center gap-2 px-5 py-2 border border-white/30 text-white text-sm tracking-wide bg-black">
+                <span className="w-2 h-2 bg-white animate-pulse" />
+                {item.highlight}
+              </div>
+            </div>
           </motion.div>
         ))}
       </div>

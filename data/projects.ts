@@ -144,7 +144,18 @@ export const projects = [
       "Optimized layouts for desktop and mobile",
     ],
 
-    images: ["/projects/projectone.png"],
+    images: ["/projects/projectone.png",
+      "/projects/projectone1.png", 
+      "/projects/projectone2.png",
+      "/projects/projectone3.png",
+      "/projects/projectone4.png",
+      "/projects/projectone5.png",
+      "/projects/projectone6.png",
+      "/projects/projectone7.png",
+      "/projects/projectone8.png",
+      "/projects/projectone9.png",
+      "/projects/projectone10.png"
+    ],
 
     tech: ["React", "Tailwind CSS"],
 
@@ -199,6 +210,9 @@ export const projects = [
       "/projects/projecttwo1.png",
       "/projects/projecttwo2.png",
       "/projects/projecttwo3.png",
+      "/projects/projecttwo4.png",
+     
+      
     ],
 
     tech: ["Node.js", "Express", "MongoDB"],

@@ -23,7 +23,7 @@ export default function ProjectSplitCard({
       {/* LEFT IMAGE */}
       <div
         onClick={onLeftClick}
-        className="relative aspect-[16/10] overflow-hidden cursor-pointer group border border-white/10"
+        className="relative aspect-[22/12] overflow-hidden cursor-pointer group "
       >
         <Image
           src={image1}
@@ -56,7 +56,7 @@ export default function ProjectSplitCard({
       {image2 && onRightClick && (
         <div
           onClick={onRightClick}
-          className="relative aspect-[16/10] overflow-hidden cursor-pointer group border border-white/10"
+          className="relative aspect-[22/12] overflow-hidden cursor-pointer group "
         >
           <Image
             src={image2}
