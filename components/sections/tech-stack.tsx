@@ -31,7 +31,7 @@ const techStack = {
     { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
     { name: "Tailwind CSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
     { name: "Redux", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
-    { name: "Framer Motion", logo: "https://cdn.simpleicons.org/framer/ffffff" },
+    // { name: "Framer Motion", logo: "https://cdn.simpleicons.org/framer/ffffff" },
     // { name: "TanStack Query", logo: "https://cdn.simpleicons.org/reactquery/FF4154" },
   ],
 
