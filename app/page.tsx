@@ -3,12 +3,8 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
-import { useScrollToSection } from "@/hooks/useScrollToSection"
-
 import LoadingScreen from "@/components/loading-screen"
 import Navigation from "@/components/navigation"
-
-
 import ExperienceSection from "@/components/ExperienceSection"
 import Projects from "@/components/Projects"
 import TechStack from "@/components/sections/tech-stack"
@@ -20,9 +16,6 @@ import Hero from "@/components/sections/Hero"
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
-
-  // 🔑 Enable hash-based scroll handling
-  useScrollToSection()
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 2500)
@@ -48,49 +41,35 @@ export default function Home() {
             <Hero />
           </section>
 
-          <Divider />
-
           {/* EXPERIENCE */}
           <section id="experience">
             <ExperienceSection />
           </section>
-
-          <Divider />
 
           {/* PROJECTS */}
           <section id="projects">
             <Projects />
           </section>
 
-          <Divider />
-
           {/* TECH STACK */}
           <section id="tech-stack">
             <TechStack />
           </section>
-
-          <Divider />
 
           {/* EDUCATION */}
           <section id="education">
             <Education />
           </section>
 
-          <Divider />
-
           {/* ABOUT */}
           <section id="aboutmore">
             <About />
           </section>
 
-          <Divider />
-
           {/* CONTACT */}
           <section id="contact">
             <Contact />
           </section>
-
-          <Divider />
 
           {/* FOOTER */}
           <section id="footer">
@@ -103,7 +82,5 @@ export default function Home() {
 }
 
 function Divider() {
-  return (
-    <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent" />
-  )
+  return <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent" />
 }
