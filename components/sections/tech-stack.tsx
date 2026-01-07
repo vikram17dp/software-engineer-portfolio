@@ -121,7 +121,7 @@ export default function Technologies() {
   transition={{ type: "spring", stiffness: 200, damping: 18 }}
   className="
     relative
-    rounded-3xl
+    rounded-md
     p-7 md:p-8
     flex flex-col items-center justify-center
     bg-white/[0.035]
