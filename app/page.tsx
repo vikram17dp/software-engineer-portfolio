@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 
 import Hero from "../components/sections/hero"
 import TechStack from "../components/sections/tech-stack"
-import Education from "../components/sections/Education"
+import Education from "../components/sections/education"
 import Contact from "../components/sections/contact"
 import Footer from "../components/sections/footer"
 
