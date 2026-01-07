@@ -42,36 +42,42 @@ export default function Home() {
           <section id="home">
             <Hero />
           </section>
-
+<Divider />
           {/* EXPERIENCE */}
           <section id="experience">
             <ExperienceSection />
           </section>
+<Divider />
 
           {/* PROJECTS */}
           <section id="projects">
             <Projects />
           </section>
+<Divider />
 
           {/* TECH STACK */}
           <section id="tech-stack">
             <TechStack />
           </section>
+<Divider />
 
           {/* EDUCATION */}
           <section id="education">
             <Education />
           </section>
+<Divider />
 
           {/* ABOUT */}
           <section id="aboutmore">
             <About />
           </section>
+<Divider />
 
           {/* CONTACT */}
           <section id="contact">
             <Contact />
           </section>
+<Divider />
 
           {/* FOOTER */}
           <section id="footer">
